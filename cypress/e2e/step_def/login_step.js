@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 import LoginPage from '../page_object/login.page';
 const { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor')
 const PoLogin = new LoginPage

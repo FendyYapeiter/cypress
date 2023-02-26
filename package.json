@@ -1,0 +1,23 @@
+{
+  "name": "cypress_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.7.0",
+    "prettier": "^2.8.4"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions":false,
+    "stepDefinitions": "**/step_def/*.js"
+  },
+  "scripts": {
+    "cy.open": "cypress open",
+    "cy.run": "cypress run"
+  }
+}
